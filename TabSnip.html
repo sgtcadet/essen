@@ -16,27 +16,29 @@
 			.tabs:hover{
 				 -ms-transform: scale(1.1); /* IE 9 */
     			 -webkit-transform: scale(1.1); /* Safari */
-    			 -moz-transform: scale(1.1);
+    			 -moz-transform: scale(1.1); /* Mozilla */
    	 			 transform: scale(1.1); /* Standard syntax */
 			}
 			section{
 				position: relative;
 			}
+			/*Tab contents*/
 			h3 {
 				float: left;
-				margin-left: 50px;
-				margin-right: 110px;
+				margin-left: 0px; /*Not necessary*/
+				margin-right: 0px;/*Not necessary*/
+				padding:5px;
 				position: relative;
 				left:40px;
 				top: -100px;
 			}
 		</style>
 	</head>
-	<!--Task Not Complete-->
+	
 <div class="wrapper" style="width:1000px;height:auto;margin-left:auto;margin-right:auto;"><!--Substitute wrapper-->
 <section>
 	<article>
-		<div id="images" style="height:270px;width:1000px;border:1px solid black;"><!--acting as guide lines-->
+		<div id="images" style="height:270px;width:1000px;"><!--tabs-->
 			<div id="img1"><a href="#"><img class="tabs" src="business_icon.png"title="Business Centre"></a></div>
 
 			<div id="img2"><a href="#"><img class="tabs" src="shop icon.png"title="Shop for Services"></a>
@@ -50,11 +52,13 @@
 		</div>
 	</article>
 	<article>
-		<hgroup style="text-align:center;">
-			<h3>Business<br />Care</h3>
-			<h3>Shop<br />for Services</h3>
-			<h3>Resource<br />Centre</h3>
-			<h3>FAQ</h3>
+	<!--tab contents-->
+		<hgroup style="text-align:center;"> <!--what's the better/best way to get these elements where they need to be????-->
+		<!--Did you want tab headers to be links???-->
+			<h3 style="margin-left:45px;">Business<br />Care</h3>
+			<h3 style="margin-left:140px">Shop<br />for Services</h3>
+			<h3 style="margin-left:145px">Resource<br />Centre</h3>
+			<h3 style="margin-left:170px">FAQ</h3>
 		</hgroup>
 	</article>
 </section>	
